@@ -1,0 +1,108 @@
+FFmpeg Corresponding Source — Build Identification
+===================================================
+
+This file documents the EXACT FFmpeg builds whose complete corresponding source
+code is provided in this repository (see Releases for the source archives), so
+anyone can identify and reproduce the exact builds bundled with Songnara Studio
+/ NEX AI. All binaries were compiled with --enable-gpl (GPL v2-or-later), which
+is why the complete corresponding source is offered here.
+
+[1] macOS — ffmpeg 8.0.1 (arm64 + x64)
+    Build provider : martin-riedl.de FFmpeg builds
+    Version        : 8.0.1
+    Source tag      : n8.0.1
+    Source commit  : 894da5ca7d742e4429ffb2af534fcda0103ef593
+    Upstream       : https://github.com/FFmpeg/FFmpeg
+    Source archive : ffmpeg-8.0.1-macos-src.tar.gz
+    buildconf:
+    --prefix=/Volumes/ffmpeg_arm64/out
+    --pkg-config-flags=--static
+    --extra-version='https://www.martin-riedl.de'
+    --enable-gray
+    --enable-libxml2
+    --enable-gpl
+    --enable-libfreetype
+    --enable-fontconfig
+    --enable-libharfbuzz
+    --enable-libsnappy
+    --enable-libsrt
+    --enable-libvmaf
+    --enable-libass
+    --enable-libklvanc
+    --enable-libzimg
+    --enable-libzvbi
+    --enable-libaom
+    --enable-libdav1d
+    --enable-libopenh264
+    --enable-libopenjpeg
+    --enable-librav1e
+    --enable-libsvtav1
+    --enable-libvpx
+    --enable-libvvenc
+    --enable-libwebp
+    --enable-libx264
+    --enable-libx265
+    --enable-libmp3lame
+    --enable-libopus
+    --enable-libvorbis
+    --enable-libtheora
+
+[2] macOS — ffprobe 8.0.1 (arm64 + x64)
+    Same provider/version/commit as [1].
+    Source archive : ffmpeg-8.0.1-macos-src.tar.gz
+    buildconf:
+    --prefix=/Volumes/ffmpeg_arm64/out
+    --pkg-config-flags=--static
+    --extra-version='https://www.martin-riedl.de'
+    --enable-gray
+    --enable-libxml2
+    --enable-gpl
+    --enable-libfreetype
+    --enable-fontconfig
+    --enable-libharfbuzz
+    --enable-libsnappy
+    --enable-libsrt
+    --enable-libvmaf
+    --enable-libass
+    --enable-libklvanc
+    --enable-libzimg
+    --enable-libzvbi
+    --enable-libaom
+    --enable-libdav1d
+    --enable-libopenh264
+    --enable-libopenjpeg
+    --enable-librav1e
+    --enable-libsvtav1
+    --enable-libvpx
+    --enable-libvvenc
+    --enable-libwebp
+    --enable-libx264
+    --enable-libx265
+    --enable-libmp3lame
+    --enable-libopus
+    --enable-libvorbis
+    --enable-libtheora
+
+[3] Windows — ffmpeg.exe & ffmpeg_stream_zmq.exe (identical build)
+    Build provider : BtbN/FFmpeg-Builds
+    Version        : N-123978-g3b19a61837
+    Source commit  : 3b19a61837
+    Upstream       : https://github.com/FFmpeg/FFmpeg
+    Build recipe   : https://github.com/BtbN/FFmpeg-Builds
+    Source archive : ffmpeg-N123978-win-src.tar.gz
+    configuration:
+    --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libxml2 --enable-libvmaf --enable-fontconfig --enable-libharfbuzz --enable-libfreetype --enable-libfribidi --enable-vulkan --enable-libshaderc --enable-libvorbis --disable-libxcb --disable-xlib --disable-libpulse --enable-opencl --enable-gmp --enable-lzma --enable-liblcevc-dec --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-libplacebo --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-liboapv --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-libvvenc --enable-whisper --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260416
+
+[4] Windows — ffprobe.exe
+    Build provider : gyan.dev FFmpeg builds
+    Version        : 4.4.1
+    Source tag      : n4.4.1
+    Source commit  : 7e0d640edf6c3eee1816b105c2f7498c4f948e74
+    Upstream       : https://github.com/FFmpeg/FFmpeg
+    Build recipe   : https://www.gyan.dev/ffmpeg/builds/
+    Source archive : ffmpeg-4.4.1-ffprobe-src.tar.gz
+    configuration:
+    --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+
+Source archives in this repo's Releases correspond 1:1 to the builds above.
+The binaries were not modified beyond renaming the executable file names.
